@@ -3,24 +3,28 @@ body {
   color: rgb(68, 68, 68);
 }
 
+#page-logo a {
+  color: rgb(183, 230, 235);
+}
+
 header {
   position: static;
 }
 
 main ul {
-  width: 100%;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 20px;
-  gap: 2rem;
-  grid-template-areas:
+  justify-items: center;
+  padding: 10%;
+  gap: 1rem;
+  /* grid-template-areas:
     'barcelona hawaii'
     'london london'
     'miami munich'
     'new-york-city paris'
     'sydney tokyo'
-    'bali none';
+    'bali none'; */
 }
 
 main li {
@@ -32,7 +36,6 @@ main li {
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
   border-radius: 6px;
   overflow: hidden;
-  width: 500px;
 }
 
 main li img {
@@ -68,6 +71,11 @@ main li img {
   color: white;
 }
 
+li:nth-of-type(3) {
+  grid-column: 1 / span 2;
+}
+
+/* 
 .barcelona {
   grid-area: barcelona;
 }
@@ -97,4 +105,4 @@ main li img {
 }
 .bali {
   grid-area: bali;
-}
+} */
